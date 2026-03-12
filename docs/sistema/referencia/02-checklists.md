@@ -5,35 +5,35 @@ sidebar_position: 2
 
 # Checklists
 
-## Checklist de implantacao
+## Checklist de implantação
 
 - [ ] Boards criados com IDs corretos
-- [ ] Colunas obrigatorias configuradas
-- [ ] Colaboradores cadastrados com matricula unica
-- [ ] Regra de estagiario (`102`) validada
+- [ ] Colunas obrigatórias configuradas
+- [ ] Colaboradores cadastrados com matrícula única
+- [ ] Regra de estagiário (`102`) validada
 - [ ] Token/API configurado com escopo correto
 - [ ] Teste completo com colaborador regular
-- [ ] Teste completo com estagiario
-- [ ] Teste de fechamento automatico as 18:00
-- [ ] Teste de edicao manual com justificativa
-- [ ] Teste de calculo de HE com e sem limiar de 30 min
+- [ ] Teste completo com estagiário
+- [ ] Teste de fechamento automático às 18:00
+- [ ] Teste de edição manual com justificativa
+- [ ] Teste de cálculo de HE com e sem limiar de 30 min
 - [ ] Teste de registro em fim de semana
 
-## Checklist de manutencao
+## Checklist de manutenção
 
-- [ ] Monitorar erros de API e autenticacao
-- [ ] Auditar alteracoes manuais e justificativas
-- [ ] Revisar pendencias de aprovacao de HE
-- [ ] Validar consistencia de grupos mensais
+- [ ] Monitorar erros de API e autenticação
+- [ ] Auditar alterações manuais e justificativas
+- [ ] Revisar pendências de aprovação de HE
+- [ ] Validar consistência de grupos mensais
 - [ ] Confirmar tratamento correto de timezone
-- [ ] Revisar mapeamento de colunas apos mudancas no board
+- [ ] Revisar mapeamento de colunas após mudanças no board
 
-## Checklist de migracao (remocao da pasta app)
+## Checklist de migração (remoção da pasta app)
 
-- [ ] Regras de negocio extraidas para modulo dedicado
-- [ ] Camada de integracao Monday isolada
+- [ ] Regras de negócio extraídas para módulo dedicado
+- [ ] Camada de integração Monday isolada
 - [ ] Fluxos de registro e encerramento reproduzidos
-- [ ] Fluxo de estagiario reproduzido
-- [ ] Fluxo de edicao manual com justificativa reproduzido
-- [ ] Testes de regressao executados com sucesso
-- [ ] Documentacao atualizada com novo caminho de codigo
+- [ ] Fluxo de estagiário reproduzido
+- [ ] Fluxo de edição manual com justificativa reproduzido
+- [ ] Testes de regressão executados com sucesso
+- [ ] Documentação atualizada com novo caminho de código

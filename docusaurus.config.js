@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Documentacao STIGMA',
-  tagline: 'Portal tecnico',
+  title: 'Documentação STIGMA',
+  tagline: 'Portal técnico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

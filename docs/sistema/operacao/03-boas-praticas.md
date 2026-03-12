@@ -1,11 +1,11 @@
 ---
-title: Boas Praticas
+title: Boas Práticas
 sidebar_position: 3
 ---
 
-# Boas Praticas
+# Boas Práticas
 
-## Validacao antes de calcular
+## Validação antes de calcular
 
 ```javascript
 if (!entrada || !saidaExpediente) {
@@ -13,7 +13,7 @@ if (!entrada || !saidaExpediente) {
 }
 ```
 
-## Tratamento de erros de integracao
+## Tratamento de erros de integração
 
 ```javascript
 try {
@@ -26,17 +26,17 @@ try {
 ## Logging padronizado
 
 - Prefixar logs por contexto: `[PontoRegistro]`, `[HistoricoPontos]`, `[Dashboard]`.
-- Registrar identificadores essenciais (matricula, id do item/subitem, acao).
+- Registrar identificadores essenciais (matrícula, id do item/subitem, ação).
 - Nunca expor token ou credenciais.
 
-## Governanca de schema
+## Governança de schema
 
-- Evitar renomear colunas em producao sem plano de migracao.
-- Manter tabela de mapeamento negocio x chave tecnica.
-- Validar periodicamente colunas obrigatorias.
+- Evitar renomear colunas em produção sem plano de migração.
+- Manter tabela de mapeamento negócio x chave técnica.
+- Validar periodicamente colunas obrigatórias.
 
-## Boas praticas de operacao
+## Boas práticas de operação
 
-- Rodar checklist de smoke test apos alteracoes de regra.
-- Auditar alteracoes manuais e justificativas.
-- Revisar mensalmente pendencias de aprovacao de HE.
+- Rodar checklist de smoke test após alterações de regra.
+- Auditar alterações manuais e justificativas.
+- Revisar mensalmente pendências de aprovação de HE.

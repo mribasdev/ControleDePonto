@@ -1,28 +1,28 @@
 ---
-title: Estagiarios e Fim de Semana
+title: Estagiários e Fim de Semana
 sidebar_position: 2
 ---
 
-# Estagiarios e Fim de Semana
+# Estagiários e Fim de Semana
 
-## Identificacao de estagiario
+## Identificação de estagiário
 
-Matricula iniciando com `102`:
+Matrícula iniciando com `102`:
 
 ```javascript
 const isEstagiario = matricula.trim().startsWith("102");
 ```
 
-## Regras para estagiarios
+## Regras para estagiários
 
 - Jornada base: `4` horas.
-- Fluxo sem almoco.
-- Ciclo diario: `Entrada -> Saida`.
+- Fluxo sem almoço.
+- Ciclo diário: `Entrada -> Saída`.
 - Hora extra apenas acima de 4 horas.
 
 ## Regras para fim de semana
 
-Trabalho em sabado e domingo e contabilizado como hora extra:
+Trabalho em sábado e domingo é contabilizado como hora extra:
 
 ```javascript
 const diaSemana = diaAtual.getDay();
@@ -32,14 +32,14 @@ const isFimDeSemana = diaSemana === 0 || diaSemana === 6;
 Comportamento esperado no fim de semana:
 
 - `horasFeitas = 0`
-- `horasExtras = total de horas liquidas`
-- Sem classificacao de "dia incompleto"
+- `horasExtras = total de horas líquidas`
+- Sem classificação de "dia incompleto"
 
-## Edicao manual e rastreabilidade
+## Edição manual e rastreabilidade
 
-Ao editar horarios manualmente:
+Ao editar horários manualmente:
 
 - Recalcular horas feitas e extras.
-- Marcar `Alteracao Manual` como alterada.
-- Exigir `Justificativa de Alteracao`.
-- Preservar historico para auditoria.
+- Marcar `Alteração Manual` como alterada.
+- Exigir `Justificativa de Alteração`.
+- Preservar histórico para auditoria.

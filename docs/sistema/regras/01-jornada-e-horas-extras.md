@@ -8,11 +8,11 @@ sidebar_position: 1
 ## Jornada base
 
 - Colaborador regular: `8` horas.
-- Estagiario: `4` horas.
+- Estagiário: `4` horas.
 
 ## Jornada completa
 
-Um dia e considerado completo com **7h40m ou mais**.
+Um dia é considerado completo com **7h40m ou mais**.
 
 ```javascript
 const JORNADA_MINIMA_COMPLETA = 7.67;
@@ -23,21 +23,21 @@ const JORNADA_MINIMA_COMPLETA = 7.67;
 | `>= 7h40` | Dia completo |
 | `< 7h40` | Dia incompleto |
 
-> Em fim de semana, o dia nao deve ser classificado como incompleto.
+> Em fim de semana, o dia não deve ser classificado como incompleto.
 
-## Calculo de horas feitas e extras
+## Cálculo de horas feitas e extras
 
 ### Dias de semana (regra geral)
 
-- Converte horario para minutos.
-- Calcula diferenca entre entrada e saida.
-- Para nao estagiario, desconta almoco fixo de 60 minutos.
-- Horas feitas limitadas ao maximo da jornada base.
-- Horas extras sao somente o excedente da jornada base.
+- Converte horário para minutos.
+- Calcula diferença entre entrada e saída.
+- Para não estagiário, desconta almoço fixo de 60 minutos.
+- Horas feitas limitadas ao máximo da jornada base.
+- Horas extras são somente o excedente da jornada base.
 
-### Tolerancia de horas extras
+### Tolerância de horas extras
 
-Horas extras menores que 30 minutos nao contabilizam:
+Horas extras menores que 30 minutos não contabilizam:
 
 ```javascript
 let horasExtras = Math.max(0, horasLiquidas - JORNADA_PADRAO);
@@ -46,12 +46,12 @@ if (horasExtras < 0.5) {
 }
 ```
 
-## Status de aprovacao de HE
+## Status de aprovação de HE
 
-- `horasExtras >= 0.5`: `Pendente Aprovacao`
+- `horasExtras >= 0.5`: `Pendente Aprovação`
 - `horasExtras < 0.5`: `N/A`
 
-## Encerramento automatico
+## Encerramento automático
 
-- Jornadas abertas podem ser encerradas automaticamente as 18:00.
-- O fechamento automatico deve recalcular horas e status de HE.
+- Jornadas abertas podem ser encerradas automaticamente às 18:00.
+- O fechamento automático deve recalcular horas e status de HE.

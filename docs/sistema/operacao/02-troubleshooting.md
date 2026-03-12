@@ -15,9 +15,9 @@ Erro ao criar/atualizar registro:
 
 ### Causa comum
 
-Atualizacao de coluna de subitem feita no item pai.
+Atualização de coluna de subitem feita no item-pai.
 
-### Correcao
+### Correção
 
 ```javascript
 // ERRADO
@@ -35,7 +35,7 @@ await board.item(itemPaiId)
 
 `new Date("YYYY-MM-DD")` interpreta em UTC.
 
-### Solucao
+### Solução
 
 ```javascript
 const [ano, mes, dia] = dataString.split("-").map(Number);
@@ -52,9 +52,9 @@ new Date("YYYY-MM-DD");
 
 ### Causa
 
-A funcao recebeu `Date` em vez de `string`.
+A função recebeu `Date` em vez de `string`.
 
-### Solucao
+### Solução
 
 ```javascript
 let diaAtual;
@@ -66,27 +66,27 @@ if (data instanceof Date) {
 }
 ```
 
-## Falha de autenticacao na API
+## Falha de autenticação na API
 
-### Possiveis causas
+### Possíveis causas
 
 - Token expirado ou revogado.
 - Escopo insuficiente.
 
-### Acoes
+### Ações
 
 1. Renovar token.
-2. Validar escopos de leitura/escrita/criacao.
-3. Reexecutar teste de criacao de subitem.
+2. Validar escopos de leitura/escrita/criação.
+3. Reexecutar teste de criação de subitem.
 
-## Registro arquivado/inativo nao edita
+## Registro arquivado/inativo não edita
 
 ### Sintoma
 
 Erro indicando item inativo ou arquivado.
 
-### Acoes
+### Ações
 
-- Verificar automacoes no board.
+- Verificar automações no board.
 - Desarquivar item/subitem.
-- Repetir operacao de update.
+- Repetir operação de update.

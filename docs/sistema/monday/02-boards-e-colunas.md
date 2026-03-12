@@ -5,55 +5,55 @@ sidebar_position: 2
 
 # Boards e Colunas
 
-## Boards obrigatorios
+## Boards obrigatórios
 
-| Board | ID | Funcao |
+| Board | ID | Função |
 | --- | ---: | --- |
 | NÚMERO DE MATRICULA | `18401380986` | Cadastro de colaboradores |
-| Registros de Ponto Diario | `18401381007` | Registros diarios e calculos |
+| Registros de Ponto Diário | `18401381007` | Registros diários e cálculos |
 
 ## Board: NÚMERO DE MATRICULA
 
-| Coluna (negocio) | Tipo | Obrigatorio | Descricao |
+| Coluna (negócio) | Tipo | Obrigatório | Descrição |
 | --- | --- | --- | --- |
 | Name | text | Sim | Nome completo do colaborador |
 | Matricula | text | Sim | Identificador unico |
 | Departamento/Cargo | dropdown ou text | Nao | Segmentacao interna |
 
-## Board: Registros de Ponto Diario (item pai)
+## Board: Registros de Ponto Diário (item-pai)
 
 | Coluna | Tipo | Obrigatorio | Descricao |
 | --- | --- | --- | --- |
 | Name | text | Sim | Nome do colaborador no grupo mensal |
-| Subitems | subitems | Sim | Registros diarios |
+| Subitems | subitems | Sim | Registros diários |
 
-## Subitems: Registros diarios
+## Subitems: Registros diários
 
-| Coluna (negocio) | Tipo | Obrigatorio | Descricao |
+| Coluna (negócio) | Tipo | Obrigatório | Descrição |
 | --- | --- | --- | --- |
 | Data | date | Sim | Data da jornada (`YYYY-MM-DD`) |
-| Acao | status | Sim | Estado atual do fluxo |
+| Ação | status | Sim | Estado atual do fluxo |
 | Entrada | hour | Sim | Hora de entrada |
-| Saida Almoco | hour | Nao | Inicio do intervalo |
-| Volta Almoco | hour | Nao | Fim do intervalo |
-| Saida Expediente | hour | Sim | Fechamento do dia |
+| Saída Almoço | hour | Não | Início do intervalo |
+| Volta Almoço | hour | Não | Fim do intervalo |
+| Saída Expediente | hour | Sim | Fechamento do dia |
 | Horas Feitas | numbers | Sim | Horas dentro da jornada base |
-| Horas Extras | numbers | Nao | Horas excedentes |
-| Status Aprovacao HE | status | Nao | Pendente Aprovacao / N/A |
-| Alteracao Manual | status | Nao | Indicador de edicao manual |
-| Justificativa de Alteracao | long-text | Nao | Motivo da alteracao |
+| Horas Extras | numbers | Não | Horas excedentes |
+| Status Aprovação HE | status | Não | Pendente Aprovação / N/A |
+| Alteração Manual | status | Não | Indicador de edição manual |
+| Justificativa de Alteração | long-text | Não | Motivo da alteração |
 
-## Mapeamento tecnico de chaves de coluna
+## Mapeamento técnico de chaves de coluna
 
-Algumas integracoes trabalham com chaves tecnicas internas. No legado atual, aparecem chaves como:
+Algumas integrações trabalham com chaves técnicas internas. Padronize o mapeamento entre nome de negócio e chave técnica para evitar erro de `Unknown column`.
 
-- `matrcula`
-- `ao`
-- `sadaAlmoo`
-- `voltaAlmoo`
-- `sadaExpediente`
-- `statusAprovaoHe`
-- `alteraoManual`
-- `justificativaDeAlterao`
+Exemplo de mapeamento padronizado:
 
-Padronize o mapeamento entre nome de negocio e chave tecnica para evitar `Unknown column`.
+- `matricula`
+- `acao`
+- `saidaAlmoco`
+- `voltaAlmoco`
+- `saidaExpediente`
+- `statusAprovacaoHe`
+- `alteracaoManual`
+- `justificativaDeAlteracao`
